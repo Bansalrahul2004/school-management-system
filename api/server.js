@@ -28,7 +28,7 @@ const corsOptions = {exposedHeaders:"Authorization"}
 app.use(cors(corsOptions));
 
 // MONGODB CONNECTION
-mongoose.connect(`mongodb://localhost:27017/school_management`).then(db=>{
+mongoose.connect(`mongodb+srv://bansalrahulktp1978:Rahul234@bansalgroup.ogwjn.mongodb.net/`).then(db=>{
     console.log("MongoDb is Connected Successfully.")
 }).catch(e=>{
     console.log("MongoDb Error",e)
