@@ -26,6 +26,8 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {exposedHeaders:"Authorization"}
 app.use(cors(corsOptions));
+// Serve uploaded images
+app.use('/api/images/uploaded', express.static(path.join(__dirname, '../frontend/public/images/uploaded')));
 
 // MONGODB CONNECTION
 mongoose.connect(`mongodb+srv://bansalrahulktp1978:Rahul234@bansalgroup.ogwjn.mongodb.net/`).then(db=>{
