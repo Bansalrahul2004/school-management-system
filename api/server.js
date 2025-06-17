@@ -4,7 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const cookieParser  = require("cookie-parser");
 const mongoose = require("mongoose");
-
+const path = require("path");
 // ROUTERS
 const schoolRouter = require("./router/school.router")
 const studentRouter = require("./router/student.router")
